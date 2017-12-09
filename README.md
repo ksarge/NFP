@@ -1,7 +1,7 @@
 # Near Field Playlist
 An Android app for building Spotify playlists in a social setting using NFC.
 
-## Requirements 
+## Requirements: 
 * Near Field Playlist requires two devices with NFC radios, at least one Spotify account, and Android version 5.0 or later. Upon starting the application, you will be prompted with a browser to sign into Spotify. After signing in, the application will enter “Guest Mode”. To switch to “Host mode”, you press the “HOST” button at the menu bar. 
 
 
@@ -9,6 +9,7 @@ An Android app for building Spotify playlists in a social setting using NFC.
 * Guest mode allows you to search for Spotify songs. Press the search icon in the menu bar to enter your search query. It only allows you to search for song names. 
 * Select a song that you want to send to a host by clicking it on the list view. 
    * You may change your selected song by clicking on a different one
+   * Selecting a song will minimize the keyboard
 * Press the send button to make the phone try to send the song information through NFC 
    * You may cancel the attempt to send the song by pressing Cancel 
 * Tap this phone against the back of another phone in Host Mode. 
@@ -28,8 +29,10 @@ An Android app for building Spotify playlists in a social setting using NFC.
 ## Known Bugs
 * There may be an issue with signing into Spotify if the native Spotify app is also installed on your device. If you encounter this error, uninstall the native Spotify app and try again, or use another device that does not have Spotify installed. 
 * Sometimes the browser will hang when trying to sign into Spotify, if this happens, kill the application and open it again. It should sign in properly this time. 
+* We encountered a bug that we cannot reproduce where if a new playlist is created, the first song added will not appear. 
 
 
-## Notes
+## Notes: 
 * If you would like to manage or play the songs in the playlist, you must be playing the song on a new device. 
 * If you want to sign out of your Spotify account, or switch Spotify accounts, open up the default web browser that your phone uses and go to spotify.com and log out.
+
